@@ -1,11 +1,9 @@
 import re
 
 def remove_text_in_brackets(text):
-    pattern = r"\([^()]*\)"
-    result = re.sub(pattern, "", text)
-    return result
+    pattern = r"\([^)]*\)"
+    return re.sub(pattern, "", text)
 
-text = "Пример (текста) с (скобками)."
-processed_text = remove_text_in_brackets(text)
-print(processed_text)
-
+text = "Это (текст), в котором нужно удалить (часть текста, заключенную) в скобки."
+cleaned_text = remove_text_in_brackets(text)
+print(cleaned_text)
