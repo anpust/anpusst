@@ -7,6 +7,3 @@ for i in range(len(S)):
         count += 1
 
 print(round((count/ln)*100,1),'%')
-
-
-
